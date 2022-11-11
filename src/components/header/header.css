@@ -1,0 +1,100 @@
+img.logoImg {
+    width: 100px;
+    cursor: pointer;
+}
+.container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    position: relative;
+    width: 90%;
+    z-index: 1;
+    margin: auto;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+.nav-bar > h3 {
+    font-size: 18px;
+    opacity: 0.7;
+    width: 150px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all 0.25s;
+}
+.nav-bar > h3:hover {
+background-color: #f2f2f4;
+cursor: pointer;
+}
+.profile {
+    width: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+svg.profile-icon {
+    width: 27px;
+    height: 27px;
+    opacity: 0.5;
+    position: relative;
+}
+svg.bar {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+.profile {
+    width: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #c7bfbf;
+    border-radius: 20px;
+    padding: 3px;
+    transition: all 0.25s;
+}
+.redDot{
+    position: relative;
+}
+.redDot::after {
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    display: block;
+    position: absolute;
+    top:-3px;
+    right:0px;
+    content: "";
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+}
+.header-container {
+    border-bottom: 1px solid #cec6c6;
+}
+.world-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all 0.25s;
+}
+.world-container:hover{
+    background: #f2f2f4;
+    cursor: pointer;
+}
+.profile:hover {
+    box-shadow: 0 0 5px 1px #c7bfbf;
+    cursor: pointer;
+}

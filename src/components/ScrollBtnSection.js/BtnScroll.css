@@ -1,0 +1,102 @@
+.scroll-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 60vw;
+  /* margin-left: auto; */
+  overflow-x: auto;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+section.btn-section-container {
+  display: flex;
+  max-width: 90vw;
+  margin: auto;
+  flex-wrap: nowrap;
+  margin-top: 15px;
+}
+.left-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  border-right: 1px solid #c2c2c2;
+  margin-right: 20px;
+  padding: 0 20px;
+}
+.right-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+button.btn-outline {
+  width: max-content;
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid #c2c2c2;
+  border-radius: 20px;
+  transition: all 0.25s;
+}
+button.btn-outline:hover {
+  box-shadow: 0 0 5px 1px #c7bfbf;
+  cursor: pointer;
+}
+.scroll-btn {
+  min-width: 150px;
+  width: max-content;
+  padding: 5px 10px;
+  background: #f3ecec;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.25s;
+  margin: 10px 0;
+}
+button.scroll-btn:hover {
+  box-shadow: 0 0 5px 1px #c7bfbf;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .right-section {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .right-section {
+    width: 56%;
+  }
+}
+@media screen and (max-width: 650px) {
+  section.btn-section-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .card {
+    height: 330px;
+    min-width: 250px;
+    background-position-x: 60%;
+  }
+  .top-container > h2 {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .top-left {
+    width: 290px;
+  }
+  .left-section {
+    padding: 0 0px;
+  }
+  .nav-bar > h3 {
+    display: none;
+  }
+}

@@ -1,0 +1,91 @@
+#grid-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 95%;
+  margin-left: auto;
+  overflow-x: auto;
+}
+#grid-list::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  height: 303px;
+  min-width: 550px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+}
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.heading-container > h1 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 800;
+    text-align: left;
+    color: #222222;
+}
+button.btn {
+    position: absolute;
+    bottom: 50px;
+    width: 100px;
+    border: none;
+    height: 36px;
+    border-radius: 10px;
+    background: #fff;
+    color: #433b3b;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+.card > p {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    color: #fff;
+    opacity: 0.9;
+}
+h2.heading {
+    font-size: 26px;
+    color: #fff;
+    width: 200px;
+    font-weight: 600;
+    font-style: normal;
+}
+button.btn:hover {
+    box-shadow: 0 0 5px 1px #c7bfbf;
+    cursor: pointer;
+}
+button.arrow-btn {
+    background: #fff;
+    border: 1px solid #c2c2c2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.arrow-btn-container{
+    display: flex;
+    width: 80px;
+    justify-content: space-evenly;
+}
+button.arrow-btn:hover {
+    box-shadow: 0 0 5px 1px #c7bfbf;
+    cursor: pointer;
+}
